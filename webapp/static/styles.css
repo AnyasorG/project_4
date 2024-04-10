@@ -1,0 +1,117 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #031d37;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  text-align: center;
+  color: #007bff;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.form {
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.column {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.column:last-child {
+  margin-right: 0;
+}
+
+.label {
+  font-weight: bold;
+  color: #333333;
+}
+
+.input-field,
+.select-field {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.button-primary.predict-button {
+  background-color: #007bff; /* Predict button color */
+  color: #ffffff;
+}
+
+.button-primary.refresh-button {
+  background-color: #28a745; /* Refresh button color */
+  color: #ffffff;
+}
+
+.button-primary.predict-button:hover {
+  background-color: hsl(211, 93%, 32%);
+}
+
+.button-primary.refresh-button:hover {
+  background-color: #218838;
+}
+
+.button-primary.predict-button,
+.button-primary.refresh-button {
+  border: none;
+  border-radius: 5px;
+  padding: 12px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+  font-weight: bold;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center vertically */
+}
+
+.result {
+  margin-top: 20px;
+  text-align: center; /* Center-align the text */
+}
+
+.prediction-content {
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.flash {
+  animation: flash-animation 0.5s infinite alternate;
+}
+
+@keyframes flash-animation {
+  from {
+      opacity: 1;
+  }
+
+  to {
+      opacity: 0;
+  }
+}
